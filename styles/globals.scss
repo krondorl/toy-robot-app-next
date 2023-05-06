@@ -1,0 +1,56 @@
+@use "normalize";
+@use "variables";
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  margin: 0;
+  font-family: var(--font-stack);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h1 {
+  animation: myFadeIn 750ms;
+  color: var(--clr-h1);
+  font-size: calc(2.5rem + 1vw);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.h2 {
+  animation: myFadeIn 1750ms;
+  border-bottom: 0.3rem dashed var(--clr-h2-underline);
+  display: inline-block;
+  font-size: calc(1.5rem);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--clr-text);
+}
+
+a:hover {
+  background-color: var(--clr-button-bg);
+}
+
+@keyframes myFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

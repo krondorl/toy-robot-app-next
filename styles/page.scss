@@ -1,0 +1,49 @@
+@use "variables";
+
+.container {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0.66rem;
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 1rem;
+}
+
+.robot {
+  height: 128px;
+  width: 128px;
+}
+
+.button {
+  background-color: var(--clr-button-bg);
+  border: 0.2rem solid var(--clr-text);
+  color: var(--clr-text);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: background-color 125ms ease-in-out;
+
+  &:hover {
+    background-color: var(--clr-h2-underline);
+  }
+}
+
+.textarea {
+  border: 0.2rem solid var(--clr-text);
+  color: var(--clr-h1);
+  font-family: monospace;
+  min-height: 11rem;
+  width: 100%;
+}
+
+.result-container {
+  margin-top: 1rem;
+}
+
+.result {
+  border: 0.2rem dashed var(--clr-text);;
+  height: 2rem;
+  width: 100%;
+}
